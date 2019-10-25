@@ -6,6 +6,7 @@ Highcharts.chart('faixaetaria', {
         plotShadow: false,
         type: 'pie'
     },
+    colors: ['#0424D9', '#031CA6','#03178C', '#020F59','#3DADF2'],
     title: {
         text: 'Faixa Etária'
     },
@@ -53,6 +54,7 @@ Highcharts.chart('faixaetaria1', {
         plotShadow: false,
         type: 'pie'
     },
+    colors: ['#510E80', '#C169FF','#A21CFF', '#613480','#8217CC'],
     title: {
         text: 'Faixa Etária'
     },

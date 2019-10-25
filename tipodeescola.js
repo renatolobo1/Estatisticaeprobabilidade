@@ -1,12 +1,16 @@
+
 Highcharts.chart('tipodeescola', {
     chart: {
         type: 'pie',
         options3d: {
             enabled: true,
-            alpha: 45,
-            beta: 0
+            alpha: 60,
+            beta: 0,
+           
         }
     },
+    
+    colors: ['#510E80', '#0424D9'],
     title: {
         text: 'Tipo de Escola'
     },
@@ -20,16 +24,25 @@ Highcharts.chart('tipodeescola', {
             depth: 35,
             dataLabels: {
                 enabled: true,
-                format: '{point.name}'
+                format: '{point.name} <br> Quantidade {point.y} <br> {point.percentage:.1f}%'
             }
         }
     },
     series: [{
         type: 'pie',
         name: '',
-        data: [
-            ['Pública', 50],
-            ['Particular', 30]
-        ]
+        data: 
+            [
+                {
+                    name: 'Particular',
+                    y: 07
+                },
+
+           {
+                    name: 'Pública',
+                    y: 09
+                }
+        ],
     }]
 });
+
